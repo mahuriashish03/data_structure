@@ -14,6 +14,7 @@ public class CountDaysAboveAverageTemperature {
         int[] temperature = new int[numberOfDays];
         int sum = 0;
 
+        //Time : O(n) where n is the number of element
         for(int i = 0; i < numberOfDays; i++) {
             System.out.print("Enter the day " + (i+1) + " temperature: ");
             temperature[i] = sc.nextInt();
@@ -23,6 +24,8 @@ public class CountDaysAboveAverageTemperature {
         double averageTemperature = (double) sum / numberOfDays;
         System.out.println("The average temperature is " + averageTemperature);
         int count = 0;
+
+        //Time: O(n) where n is the number of element.
         for(int i = 0; i < temperature.length; i++) {
             if(temperature[i] > averageTemperature) {
                 count++;

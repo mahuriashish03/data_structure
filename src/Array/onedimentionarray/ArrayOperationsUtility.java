@@ -13,6 +13,8 @@ public class ArrayOperationsUtility {
     }
 
     //Insertion in array
+    //TIme:  O(1)
+    //Space: O(n)
     public void insert(int location, int value) {
         try {
 
@@ -28,6 +30,8 @@ public class ArrayOperationsUtility {
     }
 
     //Accesssing array element
+    //TIme:  O(1)
+    //Space: O(1)
     public void findElement(int location) {
         try {
             int element = arr[location];
@@ -38,6 +42,8 @@ public class ArrayOperationsUtility {
     }
 
     //Traversal array element
+    //TIme:  O(n) where n is the number of element
+    //Space: O(1)
     public void traverse() {
         System.out.println("Traversing array elements");
         for(int i = 0; i < arr.length; i++) {
@@ -46,6 +52,8 @@ public class ArrayOperationsUtility {
     }
 
     //For searching operation
+    //TIme:  O(n) where n is the number of element
+    //Space: O(1)
     public void search(int value) {
         for(int i = 0 ; i < arr.length; i++) {
             if (arr[i] == value) {
@@ -58,6 +66,8 @@ public class ArrayOperationsUtility {
     }
 
     //For deletetion operation
+    //TIme: O(1)
+    //Space: O(n)
     public void delete(int location) {
         try {
             arr[location] = Integer.MIN_VALUE;
